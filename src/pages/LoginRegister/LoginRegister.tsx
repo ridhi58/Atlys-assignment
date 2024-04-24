@@ -1,7 +1,7 @@
-import { registerData } from "../constants/register";
-import { loginData } from '../constants/login';
+import { registerData } from "../../constants/register";
+import { loginData } from '../../constants/login';
 import { useState } from 'react';
-import Login from "../components/Login/login";
+import Login from "../../components/Login/login";
 
 
 export default function LoginRegister(){
@@ -18,7 +18,12 @@ export default function LoginRegister(){
         setFormData(loginData)
       }
     }
+
+    const goToPosts = ()=>{
+      console.log("new route")
+    }
+
     return(
-        <Login data={formData} action={switchAction} />    
+        <Login data={formData} action={switchAction} successAction={goToPosts} />    
     )
 }
