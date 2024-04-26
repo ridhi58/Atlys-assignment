@@ -36,7 +36,9 @@
     font-size: 1.125rem;
     font-weight: 600;
 }
-
+.login__form{
+    margin-top: 2.8125rem;
+}
 .login__label{
     color: #C5C7CA;
     font-weight: 500;

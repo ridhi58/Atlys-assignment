@@ -1,4 +1,5 @@
 export interface formData{
+    type:string,
     header:Header,
     inputs:FormInputs[],
     action:string,
@@ -15,6 +16,7 @@ export interface FormInputs{
     type:string,
     placeholder:string,
     showForgotPass?:boolean
+    name:string
 }
 
 interface Footer{
