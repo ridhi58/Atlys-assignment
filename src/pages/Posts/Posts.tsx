@@ -29,7 +29,7 @@ export default function Posts() {
             </div>
        
           {data.map((item) => {
-            return <PostBlock data={item} />;
+            return <PostBlock key={item.id} data={item} />;
           })}
         </div>
       </div>

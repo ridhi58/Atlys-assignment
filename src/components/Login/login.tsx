@@ -50,7 +50,7 @@ export default function Login(props: {
         <form className="login__form" onSubmit={(e) => e.preventDefault()}>
           {formFieldData.inputs.map((item: FormInputs) => {
             return (
-              <div className="login__fields">
+              <div key={item.label} className="login__fields">
                 <div className="login__fields__cont">
                   <span className="login__label">{item.label}</span>
                   {item.showForgotPass && (
