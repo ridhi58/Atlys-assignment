@@ -3,4 +3,5 @@
     width: 100%;
     background-color: #131319;
     display: flex;
+    overflow-y: auto;
 }

@@ -5,7 +5,7 @@ export default function PostBlock(props: any) {
   return (
     <div className="post-block">
       <div className="post-block__header">
-        <img alt="" src="./user1.svg"  />
+        <img alt="" src={`./${data.icon}.svg`}/>
         <div >
           <p className="post-block__header__text">{data.name}</p>
           <p className="post-block__header__timestamp" >{data.timeStamp}</p>
@@ -13,7 +13,7 @@ export default function PostBlock(props: any) {
       </div>
 
       <div className="post-block__desc">
-      👋
+      {data.reaction}
         <div className="post-block__desc__text" >{data.desc}</div>
       </div>
 

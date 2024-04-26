@@ -25,6 +25,7 @@ export default function Posts() {
                   placeholder="How are you feeling today?"
                 />
               </div>
+              <button className="post-action">Post</button>
             </div>
        
           {data.map((item) => {
