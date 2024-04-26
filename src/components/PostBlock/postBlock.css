@@ -1,0 +1,42 @@
+.post-block{
+    width: 43.75rem;
+    height: fit-content;
+    border-radius: 8px;
+    border: 2px solid #35373B;
+    background: #27292D;
+    color: #7F8084;
+    padding: 1.5rem 1.25rem;
+}
+
+.post-block__header{
+    gap: 1rem;
+    display: flex;
+}
+
+.post-block__header__text{
+    color: #C5C7CA;
+}
+.post-block__header__timestamp{
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+.post-block__desc{
+    display: flex;
+    padding: 1rem;
+    background: #191920;
+    gap:1rem;
+    margin: 1.25rem 0 .875rem 0;
+    border-radius: 8px;
+}
+.post-block__desc__input{
+    background: #191920;
+    border: none;
+    width: 100%;
+    color: #7F8084;
+}
+
+.post-block__comments{
+    gap: 0.5rem;
+    display: flex;
+}

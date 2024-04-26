@@ -1,0 +1,28 @@
+.posts{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 4.375rem 0;
+}
+
+.posts-user__text{
+    color: #C5C7CA;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.posts-user{
+    margin-bottom: 2.5rem;
+}
+
+.posts-user__subtext{
+    color: #7F8084;
+}
+
+.post-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+

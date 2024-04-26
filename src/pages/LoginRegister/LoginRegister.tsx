@@ -2,11 +2,12 @@ import { registerData } from "../../constants/register";
 import { loginData } from '../../constants/login';
 import { useState } from 'react';
 import Login from "../../components/Login/login";
-
+import { useNavigate } from "react-router-dom";
 
 export default function LoginRegister(){
     const [isLogin, setIsLogin] = useState(true);
-    const [formData , setFormData] = useState(loginData)
+    const [formData , setFormData] = useState(loginData);
+    const navigate = useNavigate();
   
   
     const switchAction = ()=>{
@@ -20,7 +21,7 @@ export default function LoginRegister(){
     }
 
     const goToPosts = ()=>{
-      console.log("new route")
+     navigate("/posts")
     }
 
     return(
